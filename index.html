@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Hafid Ghozi Al Ghifari | Bewerbung Hotelfachmann</title>
     
-    <!-- Premium Fonts: Playfair Display (Elegance) & Inter (Readability) -->
+    <!-- Premium Fonts: Playfair Display & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- GSAP for Smooth, Professional Animations -->
+    <!-- GSAP for Smooth Animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
@@ -27,10 +27,10 @@
                     colors: {
                         brand: {
                             light: '#FFFFFF',      
-                            dark: '#0F172A',       /* Slate 900 - Premium Navy/Charcoal */
-                            gold: '#D4AF37',       /* Champagne Gold */
-                            gray: '#F8FAFC',       /* Soft background gray */
-                            text: '#334155'        /* Readable text color */
+                            dark: '#0F172A',       
+                            gold: '#D4AF37',       
+                            gray: '#F8FAFC',       
+                            text: '#334155'        
                         }
                     },
                     fontFamily: {
@@ -73,9 +73,8 @@
             }
         }
 
-        /* Premium Top Navbar */
         .glass-nav {
-            background: rgba(15, 23, 42, 0.7);
+            background: rgba(15, 23, 42, 0.85);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -89,16 +88,16 @@
         .lang-btn.active {
             opacity: 1;
             color: #D4AF37;
-            font-weight: 500;
+            font-weight: 600;
         }
 
-        /* Horizontal Scroll Gallery */
+        /* Horizontal Gallery */
         .pin-wrap-sticky { height: 100vh; width: 100vw; position: relative; overflow: hidden; }
         .pin-wrap { height: 100vh; display: flex; align-items: center; padding: 0 5vw; width: max-content; }
         .photo-card { width: 85vw; max-width: 380px; margin-right: 30px; }
         @media (min-width: 768px) { .photo-card { width: 30vw; max-width: 400px; margin-right: 60px; } }
 
-        /* Elegant Form */
+        /* Form */
         .form-input {
             width: 100%;
             background: transparent;
@@ -122,37 +121,33 @@
         <span class="font-serif italic text-3xl tracking-widest text-brand-light" id="loader-text">Hafid.</span>
     </div>
 
-    <!-- Premium Floating Navigation -->
+    <!-- Navigation -->
     <nav class="fixed top-0 left-0 w-full z-50" id="navbar">
         <div class="glass-nav px-6 py-4 flex justify-between items-center text-brand-light">
-            <!-- Brand -->
             <div class="font-sans font-medium text-[10px] md:text-xs tracking-widest-plus uppercase">
                 Hafid Ghozi
             </div>
             
-            <!-- Lang Switcher & Contact -->
             <div class="flex items-center gap-6 md:gap-8">
                 <div class="flex gap-4 font-sans text-[10px] md:text-xs tracking-widest-plus">
                     <button class="lang-btn active" onclick="setLang('de')">DE</button>
                     <button class="lang-btn" onclick="setLang('en')">EN</button>
                     <button class="lang-btn" onclick="setLang('id')">ID</button>
                 </div>
-                <a href="#contact" class="hidden md:flex bg-brand-gold text-brand-dark px-5 py-2 text-[10px] uppercase tracking-widest-plus font-bold hover:bg-white transition-colors rounded-sm">
-                    <span data-i18n="nav_contact">Kontakt</span>
-                </a>
-                <a href="#contact" class="md:hidden text-brand-gold hover:text-white transition-colors">
-                    <i data-lucide="mail" class="w-5 h-5"></i>
+                <!-- 100% Text, no icons, prevents ? error -->
+                <a href="#contact" class="bg-brand-gold text-brand-dark px-4 py-2 text-[9px] md:text-[10px] uppercase tracking-widest-plus font-bold hover:bg-white transition-colors rounded-sm">
+                    <span data-i18n="nav_contact">KONTAKT</span>
                 </a>
             </div>
         </div>
     </nav>
 
     <!-- ==========================================
-         HERO: TO THE POINT & ELEGANT
+         HERO
          ========================================== -->
     <header class="relative h-screen-dynamic w-full overflow-hidden flex flex-col justify-end md:justify-center" id="hero">
         <div class="absolute inset-0 z-0 bg-brand-dark">
-            <img src="https://images.unsplash.com/photo-1542314831-c6a4d1409b1c?auto=format&fit=crop&q=80&w=2000" 
+            <img src="https://drive.google.com/file/d/1jfKdNfVCllVfzH0r1CzF2v86SE-ZsPcO/view?usp=drivesdk
                  alt="Hotel Lobby" class="w-full h-full object-cover opacity-80" id="hero-img">
             <div class="absolute inset-0 hero-overlay"></div>
         </div>
@@ -168,9 +163,8 @@
                 <span class="italic text-brand-light/90">Al Ghifari</span>
             </h1>
 
-            <!-- Punchy Intro -->
             <p class="font-sans text-sm md:text-base leading-relaxed text-brand-light/90 max-w-lg mb-10 border-l-2 border-brand-gold pl-6 py-1" data-i18n="hero_desc">
-                21 Jahre. Ehemaliger VerkÃ¤ufer, jetzt Front-Office-Praktikant. Bereit fÃ¼r die Ausbildung zum Hotelfachmann in Deutschland.
+                21 Jahre. Ehemaliger Verk&auml;ufer, jetzt Front-Office-Praktikant. Bereit f&uuml;r die Ausbildung zum Hotelfachmann in Deutschland.
             </p>
 
             <div class="flex flex-wrap gap-4 font-sans text-[10px] md:text-xs uppercase tracking-widest-plus">
@@ -182,7 +176,7 @@
     </header>
 
     <!-- ==========================================
-         SECTION 01: GESCHICHTE (Bullet Points)
+         SECTION 01: GESCHICHTE
          ========================================== -->
     <section class="bg-brand-light py-24 md:py-32 px-6 md:px-16 border-b border-gray-100">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -204,30 +198,30 @@
                     <div class="flex gap-4 items-start">
                         <i data-lucide="check-circle-2" class="w-6 h-6 text-brand-gold shrink-0"></i>
                         <div>
-                            <p class="font-bold text-brand-dark" data-i18n="story_p2_title">IT & SystemverstÃ¤ndnis</p>
-                            <p class="text-sm mt-1 leading-relaxed" data-i18n="story_p2_desc">Schnelle, selbststÃ¤ndige Einarbeitung in neue Hotel-Software, begÃ¼nstigt durch meinen Schul-Hintergrund in der IT.</p>
+                            <p class="font-bold text-brand-dark" data-i18n="story_p2_title">IT & Systemverst&auml;ndnis</p>
+                            <p class="text-sm mt-1 leading-relaxed" data-i18n="story_p2_desc">Schnelle, selbstst&auml;ndige Einarbeitung in neue Hotel-Software, beg&uuml;nstigt durch meinen Schul-Hintergrund in der IT.</p>
                         </div>
                     </div>
                     <div class="flex gap-4 items-start">
                         <i data-lucide="check-circle-2" class="w-6 h-6 text-brand-gold shrink-0"></i>
                         <div>
                             <p class="font-bold text-brand-dark" data-i18n="story_p3_title">Die Praxis (Front Office)</p>
-                            <p class="text-sm mt-1 leading-relaxed" data-i18n="story_p3_desc">Aktuelles On-the-Job-Training im Hotel. Hier hat sich bestÃ¤tigt: Direkter GÃ¤steservice ist meine absolute Leidenschaft.</p>
+                            <p class="text-sm mt-1 leading-relaxed" data-i18n="story_p3_desc">Aktuelles On-the-Job-Training. Hier hat sich best&auml;tigt: Direkter G&auml;steservice ist meine absolute Leidenschaft.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="order-1 md:order-2 fade-up relative img-reveal">
-                <img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?auto=format&fit=crop&q=80&w=1000" 
-                     alt="Service" class="w-full aspect-[4/5] object-cover rounded shadow-xl">
+                <!-- Gunakan foto diri Anda di sini jika ada foto tambahan, atau gunakan foto-1.jpg -->
+                <img src="foto-1.jpg" alt="Hafid" class="w-full aspect-[4/5] object-cover rounded shadow-xl">
             </div>
             
         </div>
     </section>
 
     <!-- ==========================================
-         SECTION 02: GALLERY (GSAP HORIZONTAL SCROLL)
+         SECTION 02: GALLERY 
          ========================================== -->
     <section class="bg-brand-gray border-b border-gray-200" id="gallery-section">
         <div class="px-6 md:px-16 pt-24 max-w-7xl mx-auto flex justify-between items-end fade-up">
@@ -241,58 +235,58 @@
         <div class="pin-wrap-sticky mt-12" id="horizontal-container">
             <div class="pin-wrap" id="horizontal-wrap">
                 
-                <!-- Foto 1: Hotel Praktikum -->
+                <!-- Foto 1: Banner Zigna -->
                 <div class="photo-card flex flex-col gap-4">
                     <div class="w-full aspect-[4/5] overflow-hidden bg-brand-dark rounded shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover inner-img">
+                        <img src="foto-1.jpg" class="w-full h-full object-cover inner-img">
                     </div>
                     <div>
                         <h3 class="font-sans font-bold text-sm text-brand-dark uppercase tracking-widest-plus" data-i18n="gal_1_title">Das Hotel</h3>
-                        <p class="font-serif italic text-brand-text/80 mt-1" data-i18n="gal_1_desc">Zigna Kampung Batik Hotel â Mein aktueller Trainingsort.</p>
+                        <p class="font-serif italic text-brand-text/80 mt-1" data-i18n="gal_1_desc">Zigna Kampung Batik Hotel &ndash; Mein aktueller Trainingsort.</p>
                     </div>
                 </div>
 
-                <!-- Foto 2: FO Kerja 1 -->
+                <!-- Foto 2: Pintu Kaca -->
                 <div class="photo-card flex flex-col gap-4">
                     <div class="w-full aspect-[4/5] overflow-hidden bg-brand-dark rounded shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover inner-img">
+                        <img src="foto-2.jpg" class="w-full h-full object-cover inner-img">
                     </div>
                     <div>
                         <h3 class="font-sans font-bold text-sm text-brand-dark uppercase tracking-widest-plus" data-i18n="gal_2_title">Am Empfang</h3>
-                        <p class="font-serif italic text-brand-text/80 mt-1" data-i18n="gal_2_desc">GÃ¤ste professionell begrÃ¼Ãen. Der erste Eindruck zÃ¤hlt.</p>
+                        <p class="font-serif italic text-brand-text/80 mt-1" data-i18n="gal_2_desc">Der erste Eindruck. G&auml;ste professionell und herzlich begr&uuml;&szlig;en.</p>
                     </div>
                 </div>
 
-                <!-- Foto 3: FO Kerja 2 -->
+                <!-- Foto 3: Telepon -->
                 <div class="photo-card flex flex-col gap-4">
                     <div class="w-full aspect-[4/5] overflow-hidden bg-brand-dark rounded shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1520697775535-eb1081515223?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover inner-img">
+                        <img src="foto-3.jpg" class="w-full h-full object-cover inner-img">
                     </div>
                     <div>
                         <h3 class="font-sans font-bold text-sm text-brand-dark uppercase tracking-widest-plus" data-i18n="gal_3_title">Kommunikation</h3>
-                        <p class="font-serif italic text-brand-text/80 mt-1" data-i18n="gal_3_desc">Telefonbetreuung: PrÃ¤zise, schnell und freundlich.</p>
+                        <p class="font-serif italic text-brand-text/80 mt-1" data-i18n="gal_3_desc">Telefonbetreuung am Desk: Pr&auml;zise, schnell und freundlich.</p>
                     </div>
                 </div>
 
-                <!-- Foto 4: FO Kerja 3 -->
+                <!-- Foto 4: Resepsionis -->
                 <div class="photo-card flex flex-col gap-4">
                     <div class="w-full aspect-[4/5] overflow-hidden bg-brand-dark rounded shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1582719478250-c89400bb52cb?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover inner-img">
+                        <img src="foto-4.jpg" class="w-full h-full object-cover inner-img">
                     </div>
                     <div>
-                        <h3 class="font-sans font-bold text-sm text-brand-dark uppercase tracking-widest-plus" data-i18n="gal_4_title">GÃ¤steservice</h3>
-                        <p class="font-serif italic text-brand-text/80 mt-1" data-i18n="gal_4_desc">Anfragen verstehen und lÃ¶sungsorientiert handeln.</p>
+                        <h3 class="font-sans font-bold text-sm text-brand-dark uppercase tracking-widest-plus" data-i18n="gal_4_title">An der Rezeption</h3>
+                        <p class="font-serif italic text-brand-text/80 mt-1" data-i18n="gal_4_desc">Anfragen verstehen, organisieren und l&ouml;sungsorientiert handeln.</p>
                     </div>
                 </div>
 
-                <!-- Foto 5: FO Kerja 4 -->
+                <!-- Foto 5: Koper / Troli -->
                 <div class="photo-card flex flex-col gap-4">
                     <div class="w-full aspect-[4/5] overflow-hidden bg-brand-dark rounded shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1566375638437-0801fc7c13a0?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover inner-img">
+                        <img src="foto-5.jpg" class="w-full h-full object-cover inner-img">
                     </div>
                     <div>
-                        <h3 class="font-sans font-bold text-sm text-brand-dark uppercase tracking-widest-plus" data-i18n="gal_5_title">Hinter den Kulissen</h3>
-                        <p class="font-serif italic text-brand-text/80 mt-1" data-i18n="gal_5_desc">Organisation, Dokumentation und Struktur am Desk.</p>
+                        <h3 class="font-sans font-bold text-sm text-brand-dark uppercase tracking-widest-plus" data-i18n="gal_5_title">Gep&auml;ckservice</h3>
+                        <p class="font-serif italic text-brand-text/80 mt-1" data-i18n="gal_5_desc">Hilfsbereitschaft und Service in jeder Situation gew&auml;hrleisten.</p>
                     </div>
                 </div>
 
@@ -301,41 +295,39 @@
     </section>
 
     <!-- ==========================================
-         SECTION 03: STÃRKEN & WACHSTUM
+         SECTION 03: STÄRKEN & WACHSTUM
          ========================================== -->
     <section class="bg-brand-light py-24 md:py-32 px-6 md:px-16 border-b border-gray-100">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
             
-            <!-- StÃ¤rken -->
             <div class="fade-up">
                 <p class="font-sans uppercase tracking-widest-plus text-xs text-brand-gold mb-4 font-bold" data-i18n="str_subtitle">Meine Arbeitsweise</p>
-                <h2 class="font-serif text-3xl md:text-4xl text-brand-dark mb-10" data-i18n="str_title">StÃ¤rken</h2>
+                <h2 class="font-serif text-3xl md:text-4xl text-brand-dark mb-10" data-i18n="str_title">St&auml;rken</h2>
                 
                 <div class="space-y-8">
                     <div>
-                        <h4 class="font-serif italic text-2xl mb-2 text-brand-dark" data-i18n="str_1_title">1. ZuhÃ¶ren</h4>
-                        <p class="font-sans text-sm text-brand-text leading-relaxed" data-i18n="str_1_desc">GÃ¤stebedÃ¼rfnisse genau verstehen und gezielt nachfragen, anstatt nur Standardantworten zu liefern.</p>
+                        <h4 class="font-serif italic text-2xl mb-2 text-brand-dark" data-i18n="str_1_title">1. Zuh&ouml;ren</h4>
+                        <p class="font-sans text-sm text-brand-text leading-relaxed" data-i18n="str_1_desc">G&auml;stebed&uuml;rfnisse genau verstehen und gezielt nachfragen, anstatt nur Standardantworten zu liefern.</p>
                     </div>
                     <div>
                         <h4 class="font-serif italic text-2xl mb-2 text-brand-dark" data-i18n="str_2_title">2. Lernbereitschaft</h4>
-                        <p class="font-sans text-sm text-brand-text leading-relaxed" data-i18n="str_2_desc">Offen fÃ¼r neues Wissen â von Hotelstandards bis hin zum Kennenlernen der regionalen Speisekarten.</p>
+                        <p class="font-sans text-sm text-brand-text leading-relaxed" data-i18n="str_2_desc">Offen f&uuml;r neues Wissen &ndash; von Hotelstandards bis hin zum Kennenlernen der regionalen Speisekarten.</p>
                     </div>
                     <div>
-                        <h4 class="font-serif italic text-2xl mb-2 text-brand-dark" data-i18n="str_3_title">3. ZuverlÃ¤ssigkeit</h4>
-                        <p class="font-sans text-sm text-brand-text leading-relaxed" data-i18n="str_3_desc">HÃ¶chste Genauigkeit und Diskretion bei Aufgaben wie Reservierungen und sensiblen GÃ¤stedaten.</p>
+                        <h4 class="font-serif italic text-2xl mb-2 text-brand-dark" data-i18n="str_3_title">3. Zuverl&auml;ssigkeit</h4>
+                        <p class="font-sans text-sm text-brand-text leading-relaxed" data-i18n="str_3_desc">H&ouml;chste Genauigkeit und Diskretion bei Aufgaben wie Reservierungen und sensiblen G&auml;stedaten.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- SchwÃ¤chen / Wachstum -->
             <div class="fade-up flex flex-col justify-center">
                 <div class="bg-brand-gray p-8 md:p-12 border border-gray-200 rounded">
-                    <h4 class="font-sans uppercase tracking-widest-plus text-xs text-brand-gold mb-4 font-bold" data-i18n="grow_title">PersÃ¶nliches Wachstum</h4>
+                    <h4 class="font-sans uppercase tracking-widest-plus text-xs text-brand-gold mb-4 font-bold" data-i18n="grow_title">Pers&ouml;nliches Wachstum</h4>
                     <p class="font-sans text-brand-text text-sm leading-relaxed mb-4" data-i18n="grow_p1">
-                        In neuer Umgebung beobachte ich anfangs oft erst die AblÃ¤ufe, bevor ich aktiv werde. Sobald ich mich sicher fÃ¼hle, arbeite ich sehr offen im Team. 
+                        In neuer Umgebung beobachte ich anfangs oft erst die Abl&auml;ufe, bevor ich aktiv werde. Sobald ich mich sicher f&uuml;hle, arbeite ich sehr offen im Team. 
                     </p>
                     <p class="font-sans text-brand-text text-sm leading-relaxed" data-i18n="grow_p2">
-                        Auch bei neuen internationalen Namen konzentriere ich mich bewusst darauf, diese direkt im GesprÃ¤ch zu wiederholen, um sie mir professionell einzuprÃ¤gen.
+                        Auch bei neuen internationalen Namen konzentriere ich mich bewusst darauf, diese direkt im Gespr&auml;ch zu wiederholen, um sie mir professionell einzupr&auml;gen.
                     </p>
                 </div>
             </div>
@@ -344,7 +336,7 @@
     </section>
 
     <!-- ==========================================
-         SECTION 04: CONTACT, FORM & CV
+         SECTION 04: CONTACT & FORM
          ========================================== -->
     <section class="bg-brand-dark text-brand-light py-24 md:py-32 px-6 md:px-16" id="contact">
         <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -352,13 +344,12 @@
             <div class="fade-up">
                 <p class="font-sans uppercase tracking-widest-plus text-xs text-brand-gold mb-4 font-bold" data-i18n="contact_subtitle">Das Ziel</p>
                 <h2 class="font-serif text-3xl md:text-5xl lg:text-6xl text-brand-light leading-tight mb-8" data-i18n="contact_title">
-                    Bereit fÃ¼r den <br><span class="italic text-brand-gold">Karriereschritt.</span>
+                    Bereit f&uuml;r den <br><span class="italic text-brand-gold">Karriereschritt.</span>
                 </h2>
                 <p class="font-sans text-brand-light/70 text-sm md:text-base leading-relaxed mb-12" data-i18n="contact_desc">
-                    Deutschzertifikat (B2) und Front-Office-Praxis sind vorhanden. Mein nÃ¤chstes Ziel: Die Ausbildung erfolgreich abschlieÃen und langfristig Verantwortung Ã¼bernehmen.
+                    Deutschzertifikat (B2) und Front-Office-Praxis sind vorhanden. Mein n&auml;chstes Ziel: Die Ausbildung erfolgreich abschlie&szlig;en und Verantwortung &uuml;bernehmen.
                 </p>
                 
-                <!-- Email & CV Buttons -->
                 <div class="space-y-6">
                     <div>
                         <p class="font-sans uppercase tracking-widest-plus text-[10px] text-brand-light/50 mb-2" data-i18n="contact_email_label">Direkter Kontakt</p>
@@ -368,7 +359,6 @@
                     </div>
                     
                     <div class="pt-6">
-                        <!-- LINK CV DISINI -->
                         <a href="Lebenslauf_Hafid Ghozi Al Ghifari.pdf" target="_blank" class="inline-flex items-center gap-2 border border-brand-gold/50 px-6 py-3 font-sans uppercase tracking-widest-plus text-[10px] font-bold hover:bg-brand-gold hover:text-brand-dark transition-colors rounded">
                             <i data-lucide="file-text" class="w-4 h-4"></i> <span data-i18n="btn_cv">Lebenslauf (CV) Ansehen</span>
                         </a>
@@ -376,7 +366,7 @@
                 </div>
             </div>
 
-            <!-- Premium Contact Form -->
+            <!-- Form -->
             <div class="bg-brand-light p-8 md:p-10 rounded shadow-2xl fade-up">
                 <h3 class="font-serif text-2xl text-brand-dark mb-6" data-i18n="form_title">Direkte Nachricht</h3>
                 
@@ -393,7 +383,6 @@
                     <button type="submit" class="w-full bg-brand-dark text-brand-gold py-4 font-sans uppercase tracking-widest-plus text-[10px] font-bold hover:bg-brand-gold hover:text-brand-dark transition-colors rounded mt-2 flex items-center justify-center gap-2">
                         <i data-lucide="send" class="w-4 h-4"></i> <span data-i18n="btn_send">Nachricht Senden</span>
                     </button>
-                    <p class="font-sans text-[9px] text-brand-text/50 text-center mt-4" data-i18n="form_note">*Ãffnet Ihr E-Mail-Programm</p>
                 </form>
             </div>
 
@@ -411,10 +400,9 @@
     </footer>
 
     <!-- ==========================================
-         JAVASCRIPT & LOGIC
+         JAVASCRIPT & TRANSLATIONS
          ========================================== -->
     <script>
-        // 1. Mailto Form Logic
         function sendEmail(e) {
             e.preventDefault();
             const name = document.getElementById('senderName').value;
@@ -425,56 +413,54 @@
             window.location.href = mailtoLink;
         }
 
-        // 2. Translations Dictionary
         const translations = {
             de: {
                 nav_contact: "Kontakt",
                 hero_subtitle: "Bewerbung um eine Ausbildung",
-                hero_desc: "21 Jahre. Ehemaliger VerkÃ¤ufer, jetzt Front-Office-Praktikant. Bereit fÃ¼r die Ausbildung zum Hotelfachmann in Deutschland.",
+                hero_desc: "21 Jahre. Ehemaliger Verk&auml;ufer, jetzt Front-Office-Praktikant. Bereit f&uuml;r die Ausbildung zum Hotelfachmann in Deutschland.",
                 hero_tag1: "B2 (Goethe)",
                 hero_tag3: "FO Praktikant",
                 story_subtitle: "Der Weg in die Hotellerie",
                 story_title: "\"Vom Verkauf <br><span class='italic text-brand-gold'>zur wahren Leidenschaft.</span>\"",
                 story_p1_title: "Kundenkontakt (Verkauf)",
                 story_p1_desc: "Praktische Erfahrung im Umgang mit verschiedenen Kundenerwartungen bei der CV Arafah Group.",
-                story_p2_title: "IT & SystemverstÃ¤ndnis",
-                story_p2_desc: "Schnelle, selbststÃ¤ndige Einarbeitung in neue Hotel-Software, begÃ¼nstigt durch meinen Schul-Hintergrund in der IT.",
+                story_p2_title: "IT & Systemverst&auml;ndnis",
+                story_p2_desc: "Schnelle, selbstst&auml;ndige Einarbeitung in neue Hotel-Software, beg&uuml;nstigt durch meinen Schul-Hintergrund in der IT.",
                 story_p3_title: "Die Praxis (Front Office)",
-                story_p3_desc: "Aktuelles On-the-Job-Training im Hotel. Hier hat sich bestÃ¤tigt: Direkter GÃ¤steservice ist meine absolute Leidenschaft.",
+                story_p3_desc: "Aktuelles On-the-Job-Training im Hotel. Hier hat sich best&auml;tigt: Direkter G&auml;steservice ist meine absolute Leidenschaft.",
                 gal_subtitle: "In Action",
                 gal_title: "Praktische <span class='italic text-brand-gold'>Einblicke</span>",
                 gal_1_title: "Das Hotel",
-                gal_1_desc: "Zigna Kampung Batik Hotel â Mein aktueller Trainingsort.",
+                gal_1_desc: "Zigna Kampung Batik Hotel &ndash; Mein aktueller Trainingsort.",
                 gal_2_title: "Am Empfang",
-                gal_2_desc: "GÃ¤ste professionell begrÃ¼Ãen. Der erste Eindruck zÃ¤hlt.",
+                gal_2_desc: "Der erste Eindruck. G&auml;ste professionell und herzlich begr&uuml;&szlig;en.",
                 gal_3_title: "Kommunikation",
-                gal_3_desc: "Telefonbetreuung: PrÃ¤zise, schnell und freundlich.",
-                gal_4_title: "GÃ¤steservice",
-                gal_4_desc: "Anfragen verstehen und lÃ¶sungsorientiert handeln.",
-                gal_5_title: "Hinter den Kulissen",
-                gal_5_desc: "Organisation, Dokumentation und Struktur am Desk.",
+                gal_3_desc: "Telefonbetreuung am Desk: Pr&auml;zise, schnell und freundlich.",
+                gal_4_title: "An der Rezeption",
+                gal_4_desc: "Anfragen verstehen, organisieren und l&ouml;sungsorientiert handeln.",
+                gal_5_title: "Gep&auml;ckservice",
+                gal_5_desc: "Hilfsbereitschaft und Service in jeder Situation gew&auml;hrleisten.",
                 str_subtitle: "Meine Arbeitsweise",
-                str_title: "StÃ¤rken",
-                str_1_title: "1. ZuhÃ¶ren",
-                str_1_desc: "GÃ¤stebedÃ¼rfnisse genau verstehen und gezielt nachfragen, anstatt nur Standardantworten zu liefern.",
+                str_title: "St&auml;rken",
+                str_1_title: "1. Zuh&ouml;ren",
+                str_1_desc: "G&auml;stebed&uuml;rfnisse genau verstehen und gezielt nachfragen, anstatt nur Standardantworten zu liefern.",
                 str_2_title: "2. Lernbereitschaft",
-                str_2_desc: "Offen fÃ¼r neues Wissen â von Hotelstandards bis hin zum Kennenlernen der regionalen Speisekarten.",
-                str_3_title: "3. ZuverlÃ¤ssigkeit",
-                str_3_desc: "HÃ¶chste Genauigkeit und Diskretion bei Aufgaben wie Reservierungen und sensiblen GÃ¤stedaten.",
-                grow_title: "PersÃ¶nliches Wachstum",
-                grow_p1: "In neuer Umgebung beobachte ich anfangs oft erst die AblÃ¤ufe, bevor ich aktiv werde. Sobald ich mich sicher fÃ¼hle, arbeite ich sehr offen im Team.",
-                grow_p2: "Auch bei neuen internationalen Namen konzentriere ich mich bewusst darauf, diese direkt im GesprÃ¤ch zu wiederholen, um sie mir professionell einzuprÃ¤gen.",
+                str_2_desc: "Offen f&uuml;r neues Wissen &ndash; von Hotelstandards bis hin zum Kennenlernen der regionalen Speisekarten.",
+                str_3_title: "3. Zuverl&auml;ssigkeit",
+                str_3_desc: "H&ouml;chste Genauigkeit und Diskretion bei Aufgaben wie Reservierungen und sensiblen G&auml;stedaten.",
+                grow_title: "Pers&ouml;nliches Wachstum",
+                grow_p1: "In neuer Umgebung beobachte ich anfangs oft erst die Abl&auml;ufe, bevor ich aktiv werde. Sobald ich mich sicher f&uuml;hle, arbeite ich sehr offen im Team.",
+                grow_p2: "Auch bei neuen internationalen Namen konzentriere ich mich bewusst darauf, diese direkt im Gespr&auml;ch zu wiederholen, um sie mir professionell einzupr&auml;gen.",
                 contact_subtitle: "Das Ziel",
-                contact_title: "Bereit fÃ¼r den <br><span class='italic text-brand-gold'>Karriereschritt.</span>",
-                contact_desc: "Deutschzertifikat (B2) und Front-Office-Praxis sind vorhanden. Mein nÃ¤chstes Ziel: Die Ausbildung erfolgreich abschlieÃen und langfristig Verantwortung Ã¼bernehmen.",
+                contact_title: "Bereit f&uuml;r den <br><span class='italic text-brand-gold'>Karriereschritt.</span>",
+                contact_desc: "Deutschzertifikat (B2) und Front-Office-Praxis sind vorhanden. Mein n&auml;chstes Ziel: Die Ausbildung erfolgreich abschlie&szlig;en und Verantwortung &uuml;bernehmen.",
                 contact_email_label: "Direkter Kontakt",
                 btn_cv: "Lebenslauf (CV) Ansehen",
                 form_title: "Direkte Nachricht",
                 form_name: "Ihr Name / Unternehmen",
                 form_subject: "Betreff",
                 form_message: "Ihre Nachricht...",
-                btn_send: "Nachricht Senden",
-                form_note: "*Ãffnet Ihr E-Mail-Programm (hafidghozii01@gmail.com)"
+                btn_send: "Nachricht Senden"
             },
             en: {
                 nav_contact: "Contact",
@@ -493,21 +479,21 @@
                 gal_subtitle: "In Action",
                 gal_title: "Practical <span class='italic text-brand-gold'>Insights</span>",
                 gal_1_title: "The Hotel",
-                gal_1_desc: "Zigna Kampung Batik Hotel â My current training ground.",
+                gal_1_desc: "Zigna Kampung Batik Hotel &ndash; My current training ground.",
                 gal_2_title: "At the Reception",
-                gal_2_desc: "Welcoming guests professionally. First impressions matter.",
+                gal_2_desc: "The first impression. Welcoming guests professionally.",
                 gal_3_title: "Communication",
                 gal_3_desc: "Telephone handling: Precise, fast, and friendly.",
                 gal_4_title: "Guest Service",
-                gal_4_desc: "Understanding requests and acting solution-oriented.",
-                gal_5_title: "Behind the Scenes",
-                gal_5_desc: "Organization, documentation, and structure at the desk.",
+                gal_4_desc: "Understanding requests, organizing and acting solution-oriented.",
+                gal_5_title: "Luggage Service",
+                gal_5_desc: "Ensuring helpfulness and service in every situation.",
                 str_subtitle: "My Work Ethic",
                 str_title: "Strengths",
                 str_1_title: "1. Listening",
                 str_1_desc: "Understanding guest needs precisely and asking targeted questions instead of giving standard answers.",
                 str_2_title: "2. Eagerness to Learn",
-                str_2_desc: "Open to new knowledge â from hotel standards to regional menus.",
+                str_2_desc: "Open to new knowledge &ndash; from hotel standards to regional menus.",
                 str_3_title: "3. Reliability",
                 str_3_desc: "Highest accuracy and discretion with sensitive tasks like reservations and guest data.",
                 grow_title: "Personal Growth",
@@ -522,8 +508,7 @@
                 form_name: "Your Name / Company",
                 form_subject: "Subject",
                 form_message: "Your Message...",
-                btn_send: "Send Message",
-                form_note: "*Opens your E-Mail Client (hafidghozii01@gmail.com)"
+                btn_send: "Send Message"
             },
             id: {
                 nav_contact: "Kontak",
@@ -542,37 +527,36 @@
                 gal_subtitle: "In Action",
                 gal_title: "Wawasan <span class='italic text-brand-gold'>Praktis</span>",
                 gal_1_title: "Hotel",
-                gal_1_desc: "Zigna Kampung Batik Hotel â Tempat pelatihan saya saat ini.",
+                gal_1_desc: "Zigna Kampung Batik Hotel &ndash; Tempat pelatihan saya saat ini.",
                 gal_2_title: "Di Resepsionis",
-                gal_2_desc: "Menyambut tamu secara profesional. Kesan pertama sangat penting.",
+                gal_2_desc: "Kesan pertama. Menyambut tamu secara profesional.",
                 gal_3_title: "Komunikasi",
                 gal_3_desc: "Layanan telepon: Tepat, cepat, dan ramah.",
                 gal_4_title: "Layanan Tamu",
-                gal_4_desc: "Memahami permintaan dan memberikan solusi terbaik.",
-                gal_5_title: "Di Balik Layar",
-                gal_5_desc: "Organisasi, dokumentasi, dan struktur di meja kerja.",
+                gal_4_desc: "Memahami permintaan, mengatur, dan memberikan solusi terbaik.",
+                gal_5_title: "Layanan Bagasi",
+                gal_5_desc: "Memastikan bantuan dan pelayanan dalam setiap situasi.",
                 str_subtitle: "Etos Kerja",
                 str_title: "Kelebihan",
                 str_1_title: "1. Mendengarkan",
                 str_1_desc: "Memahami kebutuhan tamu secara tepat dan bertanya, bukan sekadar memberi jawaban standar.",
                 str_2_title: "2. Kemauan Belajar",
-                str_2_desc: "Terbuka pada hal baru â dari standar hotel hingga pengenalan menu makanan lokal.",
+                str_2_desc: "Terbuka pada hal baru &ndash; dari standar hotel hingga pengenalan menu makanan lokal.",
                 str_3_title: "3. Keandalan",
                 str_3_desc: "Akurasi tinggi dan kehati-hatian pada tugas sensitif seperti reservasi dan data tamu.",
                 grow_title: "Pengembangan Diri",
                 grow_p1: "Di lingkungan baru, saya biasanya mengamati proses terlebih dahulu sebelum bertindak. Setelah yakin, saya bekerja sangat terbuka dalam tim.",
                 grow_p2: "Untuk nama internasional yang baru, saya membiasakan diri mengulangnya langsung dalam percakapan agar dapat mengingatnya.",
                 contact_subtitle: "Tujuan",
-                contact_title: "Siap untuk <span class='italic text-brand-gold'>Langkah Karir.</span>",
-                contact_desc: "Sertifikat bahasa Jerman (B2) dan pengalaman Front Office telah dicapai. Tujuan saya: Menyelesaikan Ausbildung dan mengambil tanggung jawab.",
+                contact_title: "Siap untuk <br><span class='italic text-brand-gold'>Langkah Karir.</span>",
+                contact_desc: "Sertifikat bahasa Jerman (B2) dan praktik Front Office telah dicapai. Tujuan saya: Menyelesaikan Ausbildung dan mengambil tanggung jawab.",
                 contact_email_label: "Kontak Langsung",
                 btn_cv: "Lihat CV (Resume)",
                 form_title: "Pesan Langsung",
                 form_name: "Nama Anda / Perusahaan",
                 form_subject: "Subjek",
                 form_message: "Pesan Anda...",
-                btn_send: "Kirim Pesan",
-                form_note: "*Akan membuka Aplikasi E-Mail Anda (hafidghozii01@gmail.com)"
+                btn_send: "Kirim Pesan"
             }
         };
 
@@ -634,7 +618,6 @@
                 );
             });
 
-            // GSAP Horizontal Scroll Pinning
             const horizontalContainer = document.querySelector("#horizontal-container");
             const horizontalWrap = document.querySelector("#horizontal-wrap");
             
@@ -659,7 +642,6 @@
                     invalidateOnRefresh: true
                 });
 
-                // Parallax for images during horizontal scroll
                 gsap.utils.toArray('.photo-card').forEach(card => {
                     const img = card.querySelector('.inner-img');
                     gsap.fromTo(img, 
