@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101722" />
+  <meta name="description" content="Hafid Ghozi Al Ghifari — Hospitality Portfolio. Front Office, Gästeservice und der nächste Schritt zur Ausbildung als Hotelfachmann in Deutschland." />
+  <title>Hafid Ghozi — Hospitality Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.2.3/dist/lenis.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="site-loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-mark">HG</div>
+      <div class="loader-line"><span></span></div>
+      <p>HOSPITALITY PORTFOLIO · 2026</p>
+    </div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><span></span></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="nav">
+    <a class="brand magnetic" href="#top" aria-label="Hafid Ghozi home">HAFID<span>.</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#journey">01 Journey</a>
+      <a href="#practice">02 Practice</a>
+      <a href="#skills">03 Skills</a>
+      <a href="#about">04 About</a>
+      <a href="#contact">05 Contact</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__inner">
+      <p class="eyebrow">HOSPITALITY PORTFOLIO · 2026</p>
+      <a href="#journey">01 / Journey</a>
+      <a href="#practice">02 / Practice</a>
+      <a href="#skills">03 / Skills</a>
+      <a href="#about">04 / About</a>
+      <a href="#contact">05 / Contact</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-media">
+        <img src="assets/images/phone-frontdesk.jpeg" alt="Hafid am Front Desk im Hotel" />
+      </div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <div class="hero-meta reveal-up">
+          <span>HOSPITALITY PORTFOLIO</span>
+          <span>2026</span>
+          <span>SURAKARTA → DEUTSCHLAND</span>
+        </div>
+        <h1 class="hero-title"><span>HAFID</span><span>GHOZI</span></h1>
+        <div class="hero-bottom reveal-up">
+          <p>FRONT OFFICE<br />HOSPITALITY</p>
+          <p class="hero-statement">Vom ersten Kontakt<br />zum echten Gästeservice.</p>
+          <a class="scroll-cue" href="#journey"><span>SCROLL TO EXPLORE</span><i></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section-pad" id="journey">
+      <div class="section-kicker"><span>01</span><span>THE SHIFT</span></div>
+      <div class="intro-grid">
+        <h2 class="display">VOM VERKAUF<br /><em>ZUR HOTELLERIE.</em></h2>
+        <div class="intro-copy">
+          <p class="lead">Mein Weg hat mich vom Kundenkontakt im Verkauf an den Front Office geführt — näher an Menschen, näher am Service, näher an dem Moment, in dem ein Gast seinen ersten Eindruck bekommt.</p>
+          <p>Ich lerne nicht nur Abläufe. Ich lerne, wie Aufmerksamkeit, klare Kommunikation und zuverlässiges Handeln einen Aufenthalt besser machen.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey-track" aria-label="Journey timeline">
+      <div class="journey-sticky">
+        <div class="journey-line"><span></span></div>
+        <div class="journey-items">
+          <article class="journey-item active"><span class="num">01</span><h3>VERKAUF</h3><p>Kundenkontakt.<br />Bedürfnisse verstehen.</p></article>
+          <article class="journey-item"><span class="num">02</span><h3>FRONT OFFICE</h3><p>Begrüßen.<br />Informieren. Organisieren.</p></article>
+          <article class="journey-item"><span class="num">03</span><h3>HOSPITALITY</h3><p>Service nicht nur beantworten —<br />den nächsten Bedarf erkennen.</p></article>
+          <article class="journey-item"><span class="num">04</span><h3>NÄCHSTER SCHRITT</h3><p>Ausbildung zum<br />Hotelfachmann in Deutschland.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement section-dark section-pad">
+      <div class="statement-number">02</div>
+      <div class="statement-word">SERVICE</div>
+      <p class="statement-caption">IST NICHT NUR EINE ANTWORT.</p>
+      <div class="statement-bottom"><span>LISTEN</span><span>UNDERSTAND</span><span>ACT</span></div>
+    </section>
+
+    <section class="practice section-pad" id="practice">
+      <div class="section-kicker"><span>02</span><span>IN ACTION</span></div>
+      <div class="practice-head">
+        <h2 class="display">SHOW<br /><em>THE WORK.</em></h2>
+        <p>Die Arbeit soll sichtbar sein. Deshalb stehen echte Situationen, echte Räume und echte Bewegungen im Mittelpunkt dieses Portfolios.</p>
+      </div>
+
+      <div class="media-editorial">
+        <figure class="media-card media-card--large reveal-media">
+          <video autoplay muted loop playsinline preload="metadata" poster="assets/posters/front-office-01.jpg">
+            <source src="assets/videos/front-office-01.mp4" type="video/mp4" />
+          </video>
+          <figcaption><span>01 / MOVEMENT</span><span>IM HOTEL</span></figcaption>
+        </figure>
+        <figure class="media-card media-card--portrait reveal-media">
+          <img src="assets/images/lobby-wide.jpeg" alt="Hafid in der Hotellobby" loading="lazy" />
+          <figcaption><span>02 / ENVIRONMENT</span><span>LOBBY</span></figcaption>
+        </figure>
+        <figure class="media-card media-card--small reveal-media">
+          <video autoplay muted loop playsinline preload="metadata" poster="assets/posters/front-office-03.jpg">
+            <source src="assets/videos/front-office-03.mp4" type="video/mp4" />
+          </video>
+          <figcaption><span>03 / DETAIL</span><span>PREPARATION</span></figcaption>
+        </figure>
+        <figure class="media-card media-card--wide reveal-media">
+          <img src="assets/images/desk-wide.jpeg" alt="Hafid hinter dem Front Desk" loading="lazy" />
+          <figcaption><span>04 / FRONT OFFICE</span><span>FIRST CONTACT</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="desk-scene section-dark" aria-label="The desk">
+      <div class="desk-sticky">
+        <div class="desk-media">
+          <img src="assets/images/desk-wide.jpeg" alt="Front Desk von Zigna Kampung Batik" />
+          <video muted loop playsinline preload="metadata" poster="assets/posters/front-office-05.jpg">
+            <source src="assets/videos/front-office-05.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="desk-overlay"></div>
+        <div class="desk-copy">
+          <div class="section-kicker light"><span>03</span><span>THE DESK</span></div>
+          <h2 class="display">DER ERSTE<br /><em>KONTAKT.</em></h2>
+          <p>Telefon, Informationen, Fragen, Orientierung. Front Office bedeutet für mich: aufmerksam bleiben und klar handeln.</p>
+          <div class="desk-tags"><span>PHONE</span><span>GUEST</span><span>INFORMATION</span><span>SERVICE</span></div>
+        </div>
+        <div class="desk-hint">HOVER / TAP TO REVEAL</div>
+      </div>
+    </section>
+
+    <section class="day section-pad">
+      <div class="section-kicker"><span>04</span><span>A DAY IN FRONT OFFICE</span></div>
+      <div class="day-layout">
+        <div class="day-sticky-title"><span>FRONT</span><span>OFFICE</span></div>
+        <div class="day-list">
+          <article class="day-item"><span>01</span><div><h3>ARRIVAL</h3><p>Ein Gast kommt an. Der erste Eindruck beginnt, bevor die erste Frage gestellt wird.</p></div><b>↗</b></article>
+          <article class="day-item"><span>02</span><div><h3>COMMUNICATION</h3><p>Telefonisch und persönlich kommunizieren. Zuhören, verstehen, klar antworten.</p></div><b>↗</b></article>
+          <article class="day-item"><span>03</span><div><h3>SERVICE</h3><p>Gäste unterstützen — freundlich, lösungsorientiert und mit Blick auf den nächsten Bedarf.</p></div><b>↗</b></article>
+          <article class="day-item"><span>04</span><div><h3>ORGANISATION</h3><p>Informationen aufnehmen, weitergeben und Abläufe zuverlässig begleiten.</p></div><b>↗</b></article>
+          <article class="day-item"><span>05</span><div><h3>RESPONSIBILITY</h3><p>Auch die kleinen Aufgaben zählen. Genauigkeit ist Teil von gutem Service.</p></div><b>↗</b></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cinema section-dark">
+      <div class="cinema-header section-pad"><div class="section-kicker light"><span>05</span><span>IN MOTION</span></div><h2 class="display">OBSERVE.<br />UNDERSTAND.<br /><em>SERVE.</em></h2></div>
+      <div class="cinema-stage">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/posters/front-office-06.jpg">
+          <source src="assets/videos/front-office-06.mp4" type="video/mp4" />
+        </video>
+        <div class="cinema-label"><span>HOSPITALITY / 2026</span><span>REAL PRACTICE</span></div>
+      </div>
+      <div class="cinema-footer section-pad"><p>Bewegung ist Teil des Jobs. Vom Lobbybereich bis zum Gepäckservice zählt, was im nächsten Moment gebraucht wird.</p></div>
+    </section>
+
+    <section class="motion-archive section-pad" aria-label="Motion archive">
+      <div class="section-kicker"><span>05.5</span><span>MOTION ARCHIVE</span></div>
+      <div class="archive-head"><h2 class="display">SMALL<br /><em>MOMENTS.</em></h2><p>Sechs kurze Beobachtungen aus dem Praktikum. Keine Inszenierung — nur Bewegung, Haltung und die kleinen Abläufe hinter gutem Service.</p></div>
+      <div class="archive-grid">
+        <figure><video autoplay muted loop playsinline preload="metadata" poster="assets/posters/front-office-02.jpg"><source src="assets/videos/front-office-02.mp4" type="video/mp4" /></video><figcaption><span>05 / CORRIDOR</span><span>ROUTINE</span></figcaption></figure>
+        <figure><video autoplay muted loop playsinline preload="metadata" poster="assets/posters/front-office-04.jpg"><source src="assets/videos/front-office-04.mp4" type="video/mp4" /></video><figcaption><span>06 / MOVEMENT</span><span>BACK OF HOUSE</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="skills section-pad" id="skills">
+      <div class="section-kicker"><span>06</span><span>WHAT I LEARNED</span></div>
+      <div class="skills-intro"><h2 class="display">NICHT NUR<br /><em>SKILLS.</em></h2><p>Kompetenz entsteht dort, wo man Verantwortung übernimmt und aus echten Situationen lernt.</p></div>
+      <div class="skill-list">
+        <article><span>01</span><h3>ZUHÖREN</h3><p>Gästebedürfnisse verstehen, statt nur Standardantworten zu geben.</p></article>
+        <article><span>02</span><h3>LERNEN</h3><p>Neue Abläufe, Hotelstandards und Informationen schnell aufnehmen.</p></article>
+        <article><span>03</span><h3>ZUVERLÄSSIGKEIT</h3><p>Präzise arbeiten und Verantwortung für den eigenen Teil des Ablaufs übernehmen.</p></article>
+        <article><span>04</span><h3>KOMMUNIKATION</h3><p>Freundlich, klar und lösungsorientiert kommunizieren — persönlich und am Telefon.</p></article>
+      </div>
+    </section>
+
+    <section class="zigna section-dark section-pad">
+      <div class="zigna-media"><img src="assets/images/lobby-wide.jpeg" alt="Zigna Kampung Batik Lobby" loading="lazy" /></div>
+      <div class="zigna-overlay"></div>
+      <div class="zigna-copy"><div class="section-kicker light"><span>07</span><span>THE PLACE</span></div><h2>ZIGNA<br /><em>KAMPUNG BATIK</em></h2><p>Laweyan · Surakarta<br />Front Office Praktikum</p><span class="zigna-note">Der Ort, an dem Theorie in echte Abläufe übergeht.</span></div>
+    </section>
+
+    <section class="screen-to-guest section-pad" id="about">
+      <div class="section-kicker"><span>08</span><span>FROM SCREEN TO GUEST</span></div>
+      <div class="split-story">
+        <div class="screen-panel"><div class="fake-terminal"><span>guest.service()</span><span>listen()</span><span>understand()</span><span>act()</span><span class="terminal-cursor">_</span></div><p>SYSTEMS</p></div>
+        <div class="guest-panel"><img src="assets/images/phone-frontdesk.jpeg" alt="Hafid im direkten Gästekontakt" loading="lazy" /><div><p>PEOPLE</p><span>Der technische Hintergrund hilft mir, Systeme schnell zu verstehen. Im Front Office habe ich entdeckt, dass ich gleichzeitig näher an Menschen arbeiten möchte.</span></div></div>
+      </div>
+      <div class="story-line"><span>FROM SCREEN</span><i></i><span>TO GUEST</span></div>
+    </section>
+
+    <section class="why section-dark section-pad">
+      <div class="section-kicker light"><span>09</span><span>WHY HOSPITALITY?</span></div>
+      <div class="why-content"><h2 class="display">MICH INTERESSIERT<br />DER MOMENT,<br /><em>IN DEM EIN GAST ANKOMMT.</em></h2><p>Eine fremde Umgebung. Eine Frage. Ein erster Kontakt. Ich möchte lernen, wie ich durch klare Informationen, Aufmerksamkeit und zuverlässige Abläufe dazu beitragen kann, dass sich ein Gast sicher und willkommen fühlt.</p></div>
+      <div class="principles"><span>CLARITY</span><span>ATTENTION</span><span>RELIABILITY</span></div>
+    </section>
+
+    <section class="germany section-pad">
+      <div class="section-kicker"><span>10</span><span>NEXT STEP</span></div>
+      <div class="route"><div class="route-place">SURAKARTA<span>INDONESIA</span></div><div class="route-line"><span></span><i>→</i></div><div class="route-place route-place--right">DEUTSCHLAND<span>AUSBILDUNG</span></div></div>
+      <div class="next-grid"><div><span>GOETHE</span><strong>B2</strong></div><div><span>CURRENT</span><strong>FRONT OFFICE</strong></div><div><span>GOAL</span><strong>HOTELFACHMANN</strong></div></div>
+      <p class="next-note">Mein nächster Schritt ist klar: die Ausbildung zum Hotelfachmann in Deutschland.</p>
+    </section>
+
+    <section class="contact section-dark" id="contact">
+      <div class="contact-top section-pad"><div class="section-kicker light"><span>11</span><span>CONTACT</span></div><p>READY FOR THE NEXT STEP?</p></div>
+      <div class="contact-main section-pad">
+        <h2>DER NÄCHSTE<br /><em>SCHRITT</em><br />BEGINNT HIER.</h2>
+
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <p class="contact-intro">Sie möchten mehr über meinen Weg, meine Praxiserfahrung oder eine mögliche Zusammenarbeit erfahren? Schreiben Sie mir direkt.</p>
+            <div class="contact-links"><a href="mailto:hafidghozii01@gmail.com">E-MAIL</a><a href="https://www.instagram.com/hafidghozii/" target="_blank" rel="noreferrer">INSTAGRAM</a><a href="https://hafidghozii.github.io/" target="_blank" rel="noreferrer">CURRENT SITE</a></div>
+          </div>
+
+          <div class="contact-side">
+            <div class="contact-cv">
+              <div><span class="mini-label">LEBENSLAUF</span><strong>CV / 2026</strong></div>
+              <a class="cv-button magnetic" href="assets/CV_Hafid_Ghozi.pdf" target="_blank" rel="noreferrer">LEBENSLAUF ÖFFNEN <span>↗</span></a>
+            </div>
+
+            <form class="contact-form" action="https://formsubmit.co/hafidghozii01@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Neue Nachricht über Hafid Ghozi Hospitality Portfolio">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="true">
+              <input type="hidden" name="_next" value="https://hafidghozii.github.io/">
+              <div class="form-field"><label for="name">IHR NAME</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Max Mustermann" required></div>
+              <div class="form-field"><label for="email">IHRE E-MAIL</label><input id="email" name="email" type="email" autocomplete="email" placeholder="max@unternehmen.de" required></div>
+              <div class="form-field"><label for="subject">BETREFF</label><input id="subject" name="subject" type="text" placeholder="Anfrage / Ausbildung / Gespräch" required></div>
+              <div class="form-field"><label for="message">NACHRICHT</label><textarea id="message" name="message" rows="5" placeholder="Ihre Nachricht ..." required></textarea></div>
+              <button class="form-submit magnetic" type="submit">NACHRICHT SENDEN <span>↗</span></button>
+              <p class="form-note">Die Nachricht wird über FormSubmit an meine E-Mail-Adresse weitergeleitet. Beim ersten Einsatz kann eine kurze Bestätigung per E-Mail erforderlich sein.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-pad"><div><strong>HAFID GHOZI</strong><span>HOSPITALITY PORTFOLIO</span></div><div>SURAKARTA → DEUTSCHLAND</div><div>© 2026</div></footer>
+</body>
+</html>
